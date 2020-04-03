@@ -154,6 +154,20 @@ def team_names
   team_names
 end
 
+def player_numbers(team)
+  jersey_numbers = []
+  if team == game_hash[:home][:team_name]
+    game_hash[:home][:players].each do |n|
+      jersey_numbers.push(n[:number])
+    end
+  end
+  if team == game_hash[:away][:team_name]
+    game_hash[:away][:players].each do |n|
+      jersey_numbers.push(n[:number])
+    end
+  end
+end
+
 
 
 

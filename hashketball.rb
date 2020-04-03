@@ -189,6 +189,6 @@ end
 
 def big_shoe_rebounds
   big_shoes = []
-  game_hash[:home][:players].select do |n|
+  game_hash[:home][:players].max_by do |n|
     n[:shoe].max_by |
 

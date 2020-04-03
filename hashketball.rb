@@ -189,9 +189,12 @@ end
 
 def big_shoe_rebounds
   big_shoes = []
+  biggest_shoes = []
   big_shoes.push(game_hash[:home][:players].max_by { |n| n[:shoe] })
   big_shoes.push(game_hash[:away][:players].max_by { |n| n[:shoe] })
-  binding.pry
+  biggest_shoes.push(big_shoes.max_by { |n| n[:shoe] })
+  biggest_shoes[:rebounds]
+  #binding.pry
 end
     
 

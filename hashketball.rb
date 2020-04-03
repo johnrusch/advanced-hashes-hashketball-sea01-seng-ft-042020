@@ -166,6 +166,7 @@ def player_numbers(team)
       jersey_numbers.push(n[:number])
     end
   end
+  binding.pry
 end
 
 

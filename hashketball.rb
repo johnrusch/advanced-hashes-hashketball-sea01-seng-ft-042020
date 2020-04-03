@@ -167,7 +167,7 @@ def player_numbers(team)
     end
   end
   jersey_numbers.sort
-  binding.pry
+  #binding.pry
 end
 
 

@@ -175,7 +175,16 @@ def player_stats(player)
   game_hash[:home][:players].select do |n|
     if n[:player_name] == player
       player_stats = n
-      player_stats.delete!
-
+      player_stats.delete(:player_name)
+    end
+  end
+  game_hash[:away][:players].select do |n|
+    if n[:player_name] == player
+      player_stats = n
+      player_stats.delete(:player_name)
+    end
+  end
+  player_stats
+end
 
 

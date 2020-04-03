@@ -170,7 +170,8 @@ def player_numbers(team)
   #binding.pry
 end
 
-
+def player_stats(player)
+  
 
 
 
